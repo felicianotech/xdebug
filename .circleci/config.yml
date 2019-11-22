@@ -38,6 +38,7 @@ jobs:
       - image: cimg/php:7.3
     steps:
       - checkout
+      - run: apt-get update && apt-get install -y php7.3-dev
       - compile
       - run:
           name: Setup extra env vars
@@ -67,6 +68,7 @@ jobs:
       - image: cimg/php:7.2
     steps:
       - checkout
+      - run: apt-get update && apt-get install -y php7.2-dev
       - compile
       - run:
           name: Setup extra env vars
