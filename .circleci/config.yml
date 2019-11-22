@@ -20,7 +20,7 @@ commands:
 jobs:
   "PHP 7 3 without opcache":
     docker:
-      - image: circleci/php:7.3.2-cli-stretch
+      - image: cimg/php:7.3
     steps:
       - checkout
       - compile
@@ -34,7 +34,7 @@ jobs:
 
   "PHP 7 3 with opcache":
     docker:
-      - image: circleci/php:7.3.2-cli-stretch
+      - image: cimg/php:7.3
     steps:
       - checkout
       - compile
@@ -48,7 +48,7 @@ jobs:
 
   "PHP 7 2 without opcache":
     docker:
-      - image: circleci/php:7.2.15-cli-stretch
+      - image: cimg/php:7.2
     steps:
       - checkout
       - compile
@@ -62,7 +62,7 @@ jobs:
 
   "PHP 7 2 with opcache":
     docker:
-      - image: circleci/php:7.2.15-cli-stretch
+      - image: cimg/php:7.2
     steps:
       - checkout
       - compile
@@ -76,7 +76,7 @@ jobs:
 
   "PHP 7 1 without opcache":
     docker:
-      - image: circleci/php:7.1.26-cli-stretch
+      - image: cimg/php:7.1
     steps:
       - checkout
       - compile
@@ -90,7 +90,7 @@ jobs:
 
   "PHP 7 1 with opcache":
     docker:
-      - image: circleci/php:7.1.26-cli-stretch
+      - image: cimg/php:7.1
     steps:
       - checkout
       - compile
